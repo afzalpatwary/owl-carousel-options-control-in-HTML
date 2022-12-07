@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Owl Carousel</title>
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- slider-markup -->
+    <section class="slider-area">
+        <div class="slider-wrapper">
+            <div class="slider-active owl-carousel owl-theme" data-carousel-options='{"loop": true,"items":3,"margin": 30, "autoplay":true,"autoplayTimeout":"2500","animateOut":
+            "fadeOut","smartSpeed": 2500,"nav": true,"dots": false,"autoplayHoverPause": true,"responsive":{"0": {"items":
+            1},"767":{"items": 2},"1200":{"items": 3}}}'>
+                <div class="item">
+                    <img src="assets/img/img1.jpg" alt="img">
+                </div>
+                <div class="item">
+                    <img src="assets/img/img1.jpg" alt="img">
+                </div>
+                <div class="item">
+                    <img src="assets/img/img1.jpg" alt="img">
+                </div>
+                <div class="item">
+                    <img src="assets/img/img1.jpg" alt="img">
+                </div>
+                <div class="item">
+                    <img src="assets/img/img1.jpg" alt="img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ slider-markup -->
+
+
+    <!-- slider-markup -->
+    <section class="slider-area">
+        <div class="slider-wrapper">
+            <div class="slider-active owl-carousel owl-theme"
+                data-carousel-options='{"autoplay":false, "nav": false, "loop": false, "autoplayTimeout":1000,"items":2, "margin": 30}'>
+                <div class="item">
+                    <img src="assets/img/img1.jpg" alt="img">
+                </div>
+                <div class="item">
+                    <img src="assets/img/img1.jpg" alt="img">
+                </div>
+                <div class="item">
+                    <img src="assets/img/img1.jpg" alt="img">
+                </div>
+                <div class="item">
+                    <img src="assets/img/img1.jpg" alt="img">
+                </div>
+                <div class="item">
+                    <img src="assets/img/img1.jpg" alt="img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ slider-markup -->
+
+
+
+    <!-- slider-markup -->
+    <section class="slider-area">
+        <div class="slider-wrapper">
+            <div class="slider-active owl-carousel owl-theme"
+                data-carousel-options='{"autoplay":true, "loop": false, "center": true, "autoplayTimeout":1000,"items":3, "margin": 30}'>
+                <div class="item">
+                    <img src="assets/img/img1.jpg" alt="img">
+                </div>
+                <div class="item">
+                    <img src="assets/img/img1.jpg" alt="img">
+                </div>
+                <div class="item">
+                    <img src="assets/img/img1.jpg" alt="img">
+                </div>
+                <div class="item">
+                    <img src="assets/img/img1.jpg" alt="img">
+                </div>
+                <div class="item">
+                    <img src="assets/img/img1.jpg" alt="img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ slider-markup -->
+
+
+
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+
+    <!-- slider activation  -->
+    <script>
+        jQuery(document).ready(function ($) {
+
+            $('body').find('.owl-carousel').each(function (e) {
+                var oc = $(this);
+                var ocOptions = oc.data('carousel-options');
+                var defaults = {
+                    loop: true,
+                    nav: true,
+                    autoplay: true,
+                    navText: ["<img src='assets/img/arrow-left.svg' class='img-fluid' />", "<img src='assets/img/arrow-right.svg' class='img-fluid' />"],
+                    dots: true,
+                }
+                oc.owlCarousel($.extend(defaults, ocOptions));
+
+            });
+        });
+    </script>
+    <!-- slider activation  -->
+
+</body>
+
+</html>

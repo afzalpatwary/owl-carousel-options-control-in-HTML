@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.slider-area{
+    margin: 50px 0;
+}
+.slider-active{
+    max-width: 1400px;
+    width: 100%;
+    margin: 50px auto;
+}
+.owl-nav button{ 
+    position: absolute;
+    top: 45%;
+    left: -50px;
+}
+.owl-nav .owl-next{
+    left: auto;
+    right: -50px;
+}
+.owl-dots button span{
+    width: 8px !important;
+    height: 8px !important;
+    background-color: #ddd !important;
+}
+.owl-dots .owl-dot.active span{
+    background-color: #ff0000 !important;
+}
